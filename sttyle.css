@@ -1,0 +1,406 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('mmm.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(46, 139, 87, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    animation: slide-in-top 2s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    animation: rotate 5s infinite linear;
+}
+
+.menu-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.menu-button {
+    background-color: #90ee90; 
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #2a7d45;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu-container:hover .dropdown-content {
+    display: block;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(60, 179, 113, 0.9);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    animation: fade-in 2s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 60px;
+    color: #2e7d32;
+}
+
+#footer {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;
+}
+.about-text{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: blacl;
+}
+table {
+    width: 100%;
+    border-spacing: 20px;
+    margin: 0 auto;
+}
+
+td {
+    text-align: center;
+    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #3cb371;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: zoom-in 1.5s ease-in-out;
+}
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(46, 139, 87, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    animation: slide-in-bottom 2s ease-out;
+}
+
+
+#about-school {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#enrollment-section {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#enrollment-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+
+#enrollment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+fieldset {
+    border: 2px solid #3cb371;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2e7d32;
+    padding: 0 10px;
+}
+
+
+.form-group {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-group div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+input,
+select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.5);
+}
+
+
+.enroll-button {
+    background-color: #3cb371;
+    color: white;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.enroll-button:hover {
+    background-color: #2e8b57;
+    transform: scale(1.05);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #2e7d32;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#images-section table {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#images-section td {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#requirements-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #2e8b57;
+}
+
+#enrollment-form fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#enrollment-form legend {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #276726;
+}
+
+@media screen and (max-width: 768px) {
+    #enrollment-section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

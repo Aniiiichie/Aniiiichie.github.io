@@ -1,0 +1,171 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('bb.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgba(46, 139, 87, 0.9);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: rotate 5s infinite linear;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(60, 179, 113, 0.9);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav .menu {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-button {
+    background-color: rgba(46, 139, 87, 0.9);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.menu-button:hover {
+    background-color: rgba(34, 139, 34, 1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 200px;
+    text-align: left;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+
+.dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+section {
+    padding: 20px;
+}
+
+.strand {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #3cb371;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fade-in 2s ease-in-out;
+}
+
+.strand-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+footer {
+    background-color: rgba(46, 139, 87, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-header {
+    animation: slide-down 2s ease-in-out;
+}
+
+.animated-text {
+    animation: slide-left 1.5s ease-in-out;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

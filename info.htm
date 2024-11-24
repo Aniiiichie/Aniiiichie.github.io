@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Programs & Events</title>
+    <link rel="stylesheet" href="sttyle.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="School Logo" class="logo">
+        <h1 class="animated-header">Programs & Events</h1>
+        <div class="menu-container dropdown">
+            <button class="menu-button">Menu</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="Aca.htm">Strand</a>
+                <a href="progeve.htm">Programs & Events</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="#sch">About Our School</a>
+            <a href="#Logo">Logo</a>
+            <a href="#req">Requirements For Enrollment</a>
+            <a href="#enrollment">Enrollment Form</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="sch">
+            <h2>About Our School</h2>
+            <p class="about-text">Stand-alone SHS is a school situated in a new site separate from a JHS or Integrated School (IS) and has its own School Head. The Stand Alone Senior High School that is located in Taguig Integrated School (TIS) started in the year of 2016.</p>
+            <p class="about-text">SASHS-TIS is one of the partnership-building schools. Its primary goal is to improve the capability of the DepEd and public schools to implement the K to 12 Program. Through partnership-building, the DepEd hopes that the partners will be able to provide the DepEd schools work immersion opportunities, hands-on expertise, additional resources, and livelihood opportunities for senior high school graduates. While partnerships are meant to aid the school in developing students.</p>
+        </section>
+
+        <section id="Logo">
+            <table>
+                <tr>
+                    <td><img src="logo.png" alt="School" class="gallery-img"></td>
+                    <td><img src="taguiug.png" alt="Department" class="gallery-img"></td>
+                    <td><img src="deped.png" alt="Region" class="gallery-img"></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="req">
+            <h2>Requirements</h2>
+            <div>
+                <h3>Incoming Grade 11</h3>
+                <ul>
+                    <li>Original Grade 10 Report Card (ALS rating if ALS passer)</li>
+                    <li>Good Moral Certificate</li>
+                    <li>NSO or PSA Birth Certificate / Brgy. Clearance</li>
+                    <li>3 pcs. 2x2 I.D. Pictures</li>
+                    <li>Long Brown Envelope</li>
+                </ul>
+                <h3>Transferee</h3>
+                <ul>
+                    <li>Original Grade 11 Report Card</li>
+                    <li>Good Moral Certificate</li>
+                    <li>NSO or PSA Birth Certificate / Brgy. Clearance</li>
+                    <li>3 pcs. 2x2 I.D. Pictures</li>
+                    <li>Long Brown Envelope</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="enrollment">
+            <h2>Enrollment Form</h2>
+            <form id="enrollment-form">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Parent/Guardian Information</legend>
+                    <label for="guardian-name">Parent/Guardian Name:</label>
+                    <input type="text" id="guardian-name" name="guardian-name" required>
+
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="text" id="contact-number" name="contact-number" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Address Information</legend>
+                    <label for="street-address">Street Address:</label>
+                    <input type="text" id="street-address" name="street-address" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="province">Province:</label>
+                    <input type="text" id="province" name="province" required>
+
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" id="zip-code" name="zip-code" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Enrollment Details</legend>
+                    <label for="strand">Strand:</label>
+                    <select id="strand" name="strand" required>
+                        <option value="STEM">STEM</option>
+                        <option value="ABM">ABM</option>
+                        <option value="HUMSS">HUMSS</option>
+                        <option value="TVL">TVL</option>
+                        <option value="GAS">GAS</option>
+                    </select>
+
+                    <label for="semester">Semester:</label>
+                    <select id="semester" name="semester" required>
+                        <option value="1st">1st Semester</option>
+                        <option value="2nd">2nd Semester</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Submit Enrollment</button>
+            </form>
+        </section>
+
+        <section id="social-links">
+            <h2>Follow Us</h2>
+            <p id=footer><a href="https://www.facebook.com/profile.php?id=100057231498229&mibextid=kFxxJD" target="_blank">Facebook Page</a></p>
+            <p id=footer><a href="https://sites.google.com/deped.gov.ph/standaloneshswithintis/home?authuser=0&fbclid=IwZXh0bgNhZW0CMTEAAR3L_vYNqpxGuai0v0f-eRQDW79gQHPRJrMIoHjRWVk39LS4ZH2fdm0pUc8_aem_6JwehZoZAQPivyUbjkzeMA" target="_blank">Main Website</a></p>
+            <p id=footer><a href="https://maps.app.goo.gl/dNZntMQfqBoyW83L9" target="_blank">View on Google Maps</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p id=footer ><strong>Stand Alone Senior High School</strong></p>
+        <p id=footer>Liwayway St., Sta Ana, Taguig, Philippines, 1630</p>
+        <p id=footer>Admin Office/Registrar: 8-2936490</p>
+        <p id=footer>Learning Information System: 0917-9792-671</p>
+    </footer>
+</body>
+</html>
